@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <!--Useful meta tags-->
+      <meta name="description" content="" />
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Scott Morgan</title>
+      <meta property="og:title" content="Scott Morgan"></meta>
+      <meta property="og:description" content="Full Stack Developer"></meta>
+      <meta property="og:image" content="../assets/img/scott-morgan.jpg"></meta>
+      <meta name="author" content="Scott Morgan" />
+
+      <!-- Favicon -->
+      <link rel="shortcut icon" type="image/x-icon" href="../assets/img/scott-morgan.jpg">
+
+      <!-- Google Fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet">
+
+      <!-- FontAwesome Css -->
+      <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+      <!-- Line icon Css -->
+      <link rel="stylesheet" href="../assets/css/LineIcons.css">
+      <!-- Bootstrap Css -->
+      <link rel="stylesheet" href="../assets/css/bootstrap.css">
+      <!-- Owl Carousel Css -->
+      <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
+      <!-- Magnific Popup Css -->
+      <link rel="stylesheet" href="../assets/css/magnific-popup.css">
+      <!-- Colors Css -->
+      <link rel="stylesheet" href="../assets/css/color/green-color.css" id="option-color">
+      <!--  Custom Style CSS  -->
+      <link rel="stylesheet" href="../assets/css/main.css">
+  </head>
+  <body class="flat-demo arshia-dark">
+
+    <!--  Pre Loader  -->
+    <div id="overlayer"></div>
+    <span class="loader"></span>
+
+
+    <!--    Header Start    -->
+    <header id="header" class="header fixed-top">
+        <nav id="scrollspy" class="navbar navbar-expand-lg header-nav">
+            <div class="container-fluid">
+                <a class="navbar-brand font-weight-bold" href="../index.html">Alexander <span class="base-color">Radonjic</span></a>
+                <!--  Navbar Toggler Button Start -->
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#toggle-menu" aria-controls="toggle-menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="lni-menu size-md"></span>
+                </button>
+                <!--  Navbar Toggler Button End -->
+                <div class="collapse navbar-collapse" id="toggle-menu">
+                    <ul class="navbar-nav nav-pills ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#hero">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#experience">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../index.html#blog">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--    Hero Start    -->
+    <section class="section hero page-hero position-relative pt-5" id="hero">
+        <div class="container page-container">
+            <div class="row pt-5">
+                <div class="col-lg-12">
+                    <div class="title-content">
+                    </div>
+                </div>
+            </div>
+            <!-- Breadcrumb -->
+            <div class="row page-title pb-5">
+                <div class="col-12">
+                    <ul class="mb-0 breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="../index.html">Home</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="../index.html#blog">Blog</a>
+                        </li>
+                        <li class="breadcrumb-item">How to Deploy a Laravel OAuth2 API on Heroku (for free!)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  Blog Single Start  -->
+    <section id="blog-single" class="section py-5 blog-single">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 blog">
+                    <div class="rounded">
+                        <div class="text-md-left">
+                            <h1 class="mb-4 h4">How to Deploy a Laravel OAuth2 API on Heroku (for free!)</h1>
+                            <div class="entry-meta mb-4">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <a class="base-color" href=""><i class="fa fa-calendar"></i>Nov 27, 2021</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="entry-image image-border mb-4">
+                                <img src="../assets/img/news/blog-3.jpg" alt="">
+                            </div>
+                            <div class="entry-content box-border p-3">
+                              <div class="crayons-article__main">
+
+          <div class="crayons-article__body text-styles spec__body" data-article-id="27689" id="article-body">
+            <p>Are you developing a quick frontend application and need a <strong>backend API for user authentication?</strong> You could put together a Node/Express API from scratch and deploy it on <a href="http://heroku.com">Heroku</a>, but unless you've got a great boilerplate, you'll be spending <em>valuable time</em> integrating dependencies like <a href="http://www.passportjs.org/">PassportJS</a> for <a href="https://jwt.io/introduction/">JWT authentication</a>. Or maybe you don't know too much server-side JS, and you're more comfortable with PHP. That's where <strong>Laravel</strong> comes in. </p>
+
+<p><strong><a href="http://laravel.com">Laravel</a></strong> is a PHP framework that gives you essential features like JWT user authentication and routing right out of the box <em>(with an official plugin)</em>. And it's surprisingly easy to deploy on Heroku if you know a couple of tips and tricks for proper configuration.</p>
+
+<h2>
+  <a name="a-free-api-for-user-authentication" href="#a-free-api-for-user-authentication">
+  </a>
+  A (Free) API for User Authentication
+</h2>
+
+<p>Today we'll be creating a basic Laravel application with user signup/login and JWT authentication API for apps. And it'll be deployed on the free tier of Heroku, a cloud-based hosting service. </p>
+
+<p>You can then use this cloud-hosted API to integrate a user authentication system to a frontend application made in React, Vue, Angular, etc. Although you will need a secondary "gateway" API to connect to this Laravel API, or use a service that offers environment variables (like <a href="http://netlify.com">Netlify</a>), since frontend apps leave API credentials vulnerable.</p>
+
+<p><em>This article presumes you have <a href="https://getcomposer.org/download/">Composer installed globally</a>. You don't have to know the <a href="http://laravel.com/">Laravel framework</a>, but it'll help you understand the structure of the application. And it'd probably help to run through <a href="https://devcenter.heroku.com/articles/getting-started-with-php#introduction">the Heroku guide</a> at least once to get your footing there.</em></p>
+
+<h2>
+  <a name="setup-laravel" href="#setup-laravel">
+  </a>
+  Setup Laravel
+</h2>
+
+<p>The first step is getting Laravel setup. We'll install it using Composer, create a SQLite database, and then configure the <code>.env</code> file.</p>
+
+<ol>
+<li>Install Laravel using Composer:
+</li>
+</ol>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight shell"><code>composer create-project <span class="nt">--prefer-dist</span> laravel/laravel laravel-api-heroku
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<ol>
+<li><p>Open up the project folder (laravel-api-heroku) and go to the <code>database</code> folder and create a new file called <code>database.sqlite</code>. It should be an empty file -- so just create it, save, and close.</p></li>
+<li><p>Go back to the root of the project and copy the <code>.env.example</code> file and name the new file<code>.env</code>.</p></li>
+<li><p>Open up the new <code>.env</code> file. Change the <code>DB_CONNECTION</code> variable to equal <code>sqlite</code>, and delete the other <code>DB_...</code> variables in the section. The section should look like this:<br>
+</p></li>
+</ol>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight plaintext"><code>LOG_CHANNEL=stack
+
+DB_CONNECTION=sqlite
+
+BROADCAST_DRIVER=log
+CACHE_DRIVER=file
+SESSION_DRIVER=file
+SESSION_LIFETIME=120
+QUEUE_DRIVER=sync
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<p>Now we can start to bootstrap Laravel with some basic features like user registration/authentication.</p>
+
+<h2>
+  <a name="setting-up-an-authentication-api" href="#setting-up-an-authentication-api">
+  </a>
+  Setting up an Authentication API
+</h2>
+
+<p>Laravel makes it incredibly simple to create a website where users can create an account or login, but it takes the simplicity a step further with the Passport package. Not only do we get user login, registration, password reset, etc all out of the box -- we also get an OAuth2.0 package with Passport that allows you to create a kind of "social login" for your own website (think the Twitter API when you access private user data). </p>
+
+<p>We'll basically be following the same instructions in the Laravel docs, <a href="https://laravel.com/docs/5.6/passport">so check those out if you get lost.</a></p>
+
+<p>Install the authentication package by running:<br>
+</p>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight shell"><code>php artisan make:auth
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<p>Now we can get the Passport package installed.<br>
+</p>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight shell"><code>composer require laravel/passport
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<p>Then we migrate the new database tables, like the users tables, or API keys.<br>
+</p>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight shell"><code>php artisan migrate
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<p>Now we can install Passport using Artisan:<br>
+</p>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight shell"><code>php artisan passport:install
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<p>We add a new trait to our User model (<code>app/User.php</code>):<br>
+</p>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="kn">namespace</span> <span class="nn">App</span><span class="p">;</span>
+
+<span class="kn">use</span> <span class="nc">Laravel\Passport\HasApiTokens</span><span class="p">;</span>
+<span class="kn">use</span> <span class="nc">Illuminate\Notifications\Notifiable</span><span class="p">;</span>
+<span class="kn">use</span> <span class="nc">Illuminate\Foundation\Auth\User</span> <span class="k">as</span> <span class="nc">Authenticatable</span><span class="p">;</span>
+
+<span class="kd">class</span> <span class="nc">User</span> <span class="kd">extends</span> <span class="nc">Authenticatable</span>
+<span class="p">{</span>
+    <span class="kn">use</span> <span class="nc">HasApiTokens</span><span class="p">,</span> <span class="nc">Notifiable</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<p>Then <code>Passport::routes</code> method within the <code>boot</code> method of your  <code>app/Providers/AuthServiceProvider.php</code>:<br>
+</p>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="kn">namespace</span> <span class="nn">App\Providers</span><span class="p">;</span>
+
+<span class="kn">use</span> <span class="nc">Laravel\Passport\Passport</span><span class="p">;</span>
+<span class="kn">use</span> <span class="nc">Illuminate\Support\Facades\Gate</span><span class="p">;</span>
+<span class="kn">use</span> <span class="nc">Illuminate\Foundation\Support\Providers\AuthServiceProvider</span> <span class="k">as</span> <span class="nc">ServiceProvider</span><span class="p">;</span>
+
+<span class="kd">class</span> <span class="nc">AuthServiceProvider</span> <span class="kd">extends</span> <span class="nc">ServiceProvider</span>
+<span class="p">{</span>
+    <span class="cd">/**
+     * The policy mappings for the application.
+     *
+     * @var array
+     */</span>
+    <span class="k">protected</span> <span class="nv">$policies</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="s1">'App\Model'</span> <span class="o">=&gt;</span> <span class="s1">'App\Policies\ModelPolicy'</span><span class="p">,</span>
+    <span class="p">];</span>
+
+    <span class="cd">/**
+     * Register any authentication / authorization services.
+     *
+     * @return void
+     */</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="n">boot</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="nf">registerPolicies</span><span class="p">();</span>
+
+        <span class="nc">Passport</span><span class="o">::</span><span class="nf">routes</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<p>Finally, in <code>config/auth.php</code>, you should set the driver option of the  api authentication guard to passport to authenticate incoming requests with <code>TokenGuard</code>:<br>
+</p>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight php"><code><span class="s1">'guards'</span> <span class="o">=&gt;</span> <span class="p">[</span>
+    <span class="s1">'web'</span> <span class="o">=&gt;</span> <span class="p">[</span>
+        <span class="s1">'driver'</span> <span class="o">=&gt;</span> <span class="s1">'session'</span><span class="p">,</span>
+        <span class="s1">'provider'</span> <span class="o">=&gt;</span> <span class="s1">'users'</span><span class="p">,</span>
+    <span class="p">],</span>
+
+    <span class="s1">'api'</span> <span class="o">=&gt;</span> <span class="p">[</span>
+        <span class="s1">'driver'</span> <span class="o">=&gt;</span> <span class="s1">'passport'</span><span class="p">,</span>
+        <span class="s1">'provider'</span> <span class="o">=&gt;</span> <span class="s1">'users'</span><span class="p">,</span>
+    <span class="p">],</span>
+<span class="p">],</span>
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<blockquote>
+<p>Protip: If you have a previous Laravel installation and you're changing the configuration, make sure to wipe out the config cache by running <code>php artisan config:cache</code> in the console.</p>
+</blockquote>
+
+<p>Now we have a Laravel application pre-built with user authentication and OAuth2.0. You can test out the user auth by running <code>php artisan serve</code> and going to <a href="http://localhost:8000">the local development server</a>.There you should see the default Laravel landing page, and login and register buttons in the top right of the screen.</p>
+
+<h2>
+  <a name="deploying-to-heroku" href="#deploying-to-heroku">
+  </a>
+  Deploying to Heroku
+</h2>
+
+<p>Heroku is a great host with an excellent free hosting package if you're looking quick and easy deployment for most styles of apps (NodeJS, PHP, Ruby, etc). We'll also be leveraging the free tier of their Postres database hosting, which gives you 10k database records to play with.</p>
+
+<blockquote>
+<p>Check out the guide <a href="https://devcenter.heroku.com/articles/getting-started-with-laravel">on Heroku's website for deploying Laravel</a>.</p>
+</blockquote>
+
+<p>First we have to let the Heroku server know our app is actually in the <code>public/</code> folder. Let's create a new file in the project root called <code>Procfile</code> and add the following:<br>
+</p>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight plaintext"><code>web: vendor/bin/heroku-php-apache2 public/
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<p>Then create a new Heroku application <a href="https://devcenter.heroku.com/articles/heroku-cli">using the CLI</a>:<br>
+</p>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight shell"><code>heroku create
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<p>Now add your application key for the production site:<br>
+</p>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight shell"><code>heroku config:set <span class="nv">APP_KEY</span><span class="o">=</span><span class="si">$(</span>php artisan <span class="nt">--no-ansi</span> key:generate <span class="nt">--show</span><span class="si">)</span>
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<p>Commit any changes and push the master branch to the Heroku remote repo:<br>
+</p>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight plaintext"><code>git push heroku master
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<p>Now we can add the database. Add a SQLite database to your Heroku app by going to the <a href="https://elements.heroku.com/addons/heroku-postgresql">Heroku PostgresSQL</a> page and clicking the install button. Then pick your app from the dropdown and click continue. You'll be prompted to pick a pricing plan, I went with the free Hobby plan.</p>
+
+<p>Now you can <a href="https://devcenter.heroku.com/articles/heroku-postgresql#connecting-in-php">connect your application to Heroku's Postgres database</a> by updating your <code>config/database.php</code> file:<br>
+</p>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight php"><code><span class="nv">$DATABASE_URL</span> <span class="o">=</span> <span class="nb">parse_url</span><span class="p">(</span><span class="nb">getenv</span><span class="p">(</span><span class="s2">"DATABASE_URL"</span><span class="p">));</span>
+<span class="nv">$DB_CONNECTION</span> <span class="o">=</span> <span class="nb">parse_url</span><span class="p">(</span><span class="nb">getenv</span><span class="p">(</span><span class="s2">"DB_CONNECTION"</span><span class="p">));</span>
+
+<span class="k">return</span> <span class="p">[</span>
+
+    <span class="s1">'default'</span> <span class="o">=&gt;</span> <span class="nf">env</span><span class="p">(</span><span class="s1">'DB_CONNECTION'</span><span class="p">,</span> <span class="nv">$DB_CONNECTION</span><span class="p">),</span>
+    <span class="c1">// …</span>
+
+    <span class="s1">'connections'</span> <span class="o">=&gt;</span> <span class="p">[</span>
+
+        <span class="c1">// …</span>
+
+        <span class="s1">'pgsql'</span> <span class="o">=&gt;</span> <span class="p">[</span>
+            <span class="s1">'driver'</span> <span class="o">=&gt;</span> <span class="s1">'pgsql'</span><span class="p">,</span>
+            <span class="s1">'host'</span> <span class="o">=&gt;</span> <span class="nv">$DATABASE_URL</span><span class="p">[</span><span class="s2">"host"</span><span class="p">],</span>
+            <span class="s1">'port'</span> <span class="o">=&gt;</span> <span class="nv">$DATABASE_URL</span><span class="p">[</span><span class="s2">"port"</span><span class="p">],</span>
+            <span class="s1">'database'</span> <span class="o">=&gt;</span> <span class="nb">ltrim</span><span class="p">(</span><span class="nv">$DATABASE_URL</span><span class="p">[</span><span class="s2">"path"</span><span class="p">],</span> <span class="s2">"/"</span><span class="p">),</span>
+            <span class="s1">'username'</span> <span class="o">=&gt;</span> <span class="nv">$DATABASE_URL</span><span class="p">[</span><span class="s2">"user"</span><span class="p">],</span>
+            <span class="s1">'password'</span> <span class="o">=&gt;</span> <span class="nv">$DATABASE_URL</span><span class="p">[</span><span class="s2">"pass"</span><span class="p">],</span>
+            <span class="s1">'charset'</span> <span class="o">=&gt;</span> <span class="s1">'utf8'</span><span class="p">,</span>
+            <span class="s1">'prefix'</span> <span class="o">=&gt;</span> <span class="s1">''</span><span class="p">,</span>
+            <span class="s1">'schema'</span> <span class="o">=&gt;</span> <span class="s1">'public'</span><span class="p">,</span>
+            <span class="s1">'sslmode'</span> <span class="o">=&gt;</span> <span class="s1">'require'</span><span class="p">,</span>
+        <span class="p">],</span>
+
+        <span class="c1">// …</span>
+
+    <span class="p">],</span>
+
+    <span class="c1">// …</span>
+
+<span class="p">];</span>
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<p>We also need to edit the environment variables to let Laravel know to use the <code>pgsql</code> database driver when we use Heroku in production. Head over to your project on Heroku, go to the Settings page, and click Show Config Vars. Make a new entry with they key <code>DB_CONNECTION</code> and <code>pgsql</code> as the value.</p>
+
+<p>Now remove the OAuth keys that were generated locally from the <code>.gitignore</code> file by deleting this line:<code>/storage/*.key</code>. Ideally we'd generate these in production, but I had issues with Heroku generating them, so we just import the local ones instead!</p>
+
+<p>Commit your changes to make the database connection real:<br>
+</p>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight shell"><code>git add <span class="nb">.</span>
+git commit <span class="nt">-m</span> <span class="s2">"Added Heroku database configuration"</span>
+git push heroku master
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<p>Now that your database has been connected, make sure to run your database migrations in production to structure your fresh DB. You'll be running it through the Heroku CLI:<br>
+</p>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight shell"><code>heroku run php artisan migrate
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<p>Your Laravel website should be live! You can register new users and login with the credentials you create. </p>
+
+<h2>
+  <a name="connecting-to-your-new-api" href="#connecting-to-your-new-api">
+  </a>
+  Connecting to your new API
+</h2>
+
+<p>If you'd like to make an authenticated request to the API through a certain user, you'll either need to go through the OAuth2.0 verification process, or provide a personal access token (or JWT). Laravel Passport allows you to create a new client with a simple command line script:<br>
+</p>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight shell"><code>heroku run php artisan passport:client <span class="nt">--personal</span>
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<p>When prompted for an app name, name it anything, and click Enter. You'll be provided a Client ID and Secret which you'll use to access the API remotely.</p>
+
+<p>If you're not familiar with the OAuth2.0 protocol, here's a quick breakdown. OAuth2.0 protects your API by creating a 3-step verification system before offering a secure token to access the Laravel API endpoints secured with middleware authentication. </p>
+
+<ol>
+<li><p>You first redirect the user to the Laravel API's OAuth Authorize page (<code>http://yourlaravelapp.com/oauth/authorize</code>) and attach your Client ID and a callback URL to the request. </p></li>
+<li><p>The user is either presented a login screen - or if they're already logged in - they see an authorization form to allow your frontend app to access their data (similar to Twitter's authorization when you use social login). Then the API then redirects the user back to the callback URL you provided, and it sends over a secret token. </p></li>
+</ol>
+
+<p><a href="https://res.cloudinary.com/practicaldev/image/fetch/s--SJwBkAjy--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/http://stayregular.net/content/2-blog/20180423-deploy-laravel-on-heroku-to-create-oauth2-0-api/laravel-passport-default-authorization-request.png" class="article-body-image-wrapper"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--SJwBkAjy--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/http://stayregular.net/content/2-blog/20180423-deploy-laravel-on-heroku-to-create-oauth2-0-api/laravel-passport-default-authorization-request.png" alt="Laravel's default API permission authorization screen" loading="lazy"></a></p>
+
+<ol>
+<li>You take that secret token and send it back to the API with your Client ID, secret, and callback URL. The API responds back with another secret token, this time a personal access token for the specific user that authorized by logging in. This personal access token is <a href="https://jwt.io/">a <strong>JWT</strong></a> or <strong>JSON Web Token</strong>, which is an industry standard method for authorizing between APIs.</li>
+</ol>
+
+<p>Any time we'd like to access any part of the API that requires authentication, like private user data, we send our request to the API with a Authorization Bearer token in the header. That token in the JWT we generated in step 3.</p>
+
+<p>Here's a snippet of this kind of setup in Laravel using <code>session()</code> to store the access token. <em>Remember, this is a separate "gateway" application that obfuscates your API credentials for a frontend app</em>:<br>
+</p>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight php"><code>
+<span class="nc">Route</span><span class="o">::</span><span class="nf">get</span><span class="p">(</span><span class="s1">'/'</span><span class="p">,</span> <span class="k">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="nv">$query</span> <span class="o">=</span> <span class="nb">http_build_query</span><span class="p">([</span>
+        <span class="s1">'client_id'</span> <span class="o">=&gt;</span> <span class="s1">'420'</span><span class="p">,</span>
+        <span class="s1">'redirect_uri'</span> <span class="o">=&gt;</span> <span class="s1">'http://127.0.0.1:8001/callback'</span><span class="p">,</span>
+        <span class="s1">'response_type'</span> <span class="o">=&gt;</span> <span class="s1">'code'</span><span class="p">,</span>
+        <span class="s1">'scope'</span> <span class="o">=&gt;</span> <span class="s1">'access-patient-status'</span>
+    <span class="p">]);</span>
+
+    <span class="k">return</span> <span class="nf">redirect</span><span class="p">(</span><span class="s1">'http://127.0.0.1/oauth/authorize?'</span><span class="mf">.</span><span class="nv">$query</span><span class="p">);</span>
+<span class="p">});</span>
+
+<span class="nc">Route</span><span class="o">::</span><span class="nf">get</span><span class="p">(</span><span class="s1">'/callback'</span><span class="p">,</span> <span class="k">function</span> <span class="p">(</span><span class="kt">Request</span> <span class="nv">$request</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nv">$response</span> <span class="o">=</span> <span class="p">(</span><span class="k">new</span> <span class="nc">GuzzleHttp\Client</span><span class="p">)</span><span class="o">-&gt;</span><span class="nf">post</span><span class="p">(</span><span class="s1">'http://127.0.0.1/oauth/token'</span><span class="p">,</span> <span class="p">[</span>
+        <span class="s1">'form_params'</span> <span class="o">=&gt;</span> <span class="p">[</span>
+            <span class="s1">'grant_type'</span> <span class="o">=&gt;</span> <span class="s1">'authorization_code'</span><span class="p">,</span>
+            <span class="s1">'client_id'</span> <span class="o">=&gt;</span> <span class="s1">'420'</span><span class="p">,</span>
+            <span class="s1">'client_secret'</span> <span class="o">=&gt;</span> <span class="s1">'EXKWFSwGHrbGdC3M4F5kkzmtCZIXyE3fbA8agtw2'</span><span class="p">,</span>
+            <span class="s1">'redirect_uri'</span> <span class="o">=&gt;</span> <span class="s1">'http://127.0.0.1:8001/callback'</span><span class="p">,</span>
+            <span class="s1">'code'</span> <span class="o">=&gt;</span> <span class="nv">$request</span><span class="o">-&gt;</span><span class="n">code</span><span class="p">,</span>
+        <span class="p">]</span>
+    <span class="p">]);</span>
+
+    <span class="nf">session</span><span class="p">()</span><span class="o">-&gt;</span><span class="nf">put</span><span class="p">(</span><span class="s1">'token'</span><span class="p">,</span> <span class="nb">json_decode</span><span class="p">((</span><span class="n">string</span><span class="p">)</span> <span class="nv">$response</span><span class="o">-&gt;</span><span class="nf">getBody</span><span class="p">(),</span> <span class="kc">true</span><span class="p">));</span>
+
+    <span class="k">return</span> <span class="nf">redirect</span><span class="p">(</span><span class="s1">'/user'</span><span class="p">);</span>
+<span class="p">});</span>
+
+<span class="nc">Route</span><span class="o">::</span><span class="nf">get</span><span class="p">(</span><span class="s1">'/user'</span><span class="p">,</span> <span class="k">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span> <span class="o">!</span> <span class="nf">session</span><span class="p">()</span><span class="o">-&gt;</span><span class="nf">has</span><span class="p">(</span><span class="s1">'token'</span><span class="p">))</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nf">redirect</span><span class="p">(</span><span class="s1">'/'</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="nv">$response</span> <span class="o">=</span> <span class="p">(</span><span class="k">new</span> <span class="nc">GuzzleHttp\Client</span><span class="p">)</span><span class="o">-&gt;</span><span class="nf">get</span><span class="p">(</span><span class="s1">'http://127.0.0.1/api/user'</span><span class="p">,</span> <span class="p">[</span>
+        <span class="s1">'headers'</span> <span class="o">=&gt;</span> <span class="p">[</span>
+            <span class="s1">'Authorization'</span> <span class="o">=&gt;</span> <span class="s1">'Bearer '</span><span class="mf">.</span><span class="nc">Session</span><span class="o">::</span><span class="nf">get</span><span class="p">(</span><span class="s1">'token.access_token'</span><span class="p">)</span>
+        <span class="p">]</span>
+    <span class="p">]);</span>
+
+    <span class="k">return</span> <span class="nb">json_decode</span><span class="p">((</span><span class="n">string</span><span class="p">)</span> <span class="nv">$response</span><span class="o">-&gt;</span><span class="nf">getBody</span><span class="p">(),</span> <span class="kc">true</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<p>You could also accomplish this in a React app using <code>react-router</code> to create the callback route, and a service like Netlify to securely <a href="https://www.netlify.com/docs/continuous-deployment/#build-environment-variables">access API key variables in your build environment.</a> (rather than exposing them directly in your production code).</p>
+
+<h2>
+  <a name="let-the-hackathons-begin" href="#let-the-hackathons-begin">
+  </a>
+  Let the hackathons begin
+</h2>
+
+<p>I hope this inspires you to tackle your projects in a new way. We're living in the transition away from the monolith towards a microservices based architecture, and this type of setup will help you migrate your projects into this new infrastructure. The <a href="http://jamstack.org">JAMstack revolution</a> is upon is, and developers are engineering more frontend applications that utilize these modular, cloud-distributed API solutions. </p>
+
+<p>You can take your app's source code and host it on a CDN for the most efficient distribution. And rather than pound the same server you're using to host the frontend to run requests to the backend to login or register users, we break that service out into a separate API that lives on it's own server. If the authentication API server crashes, it never takes down the website CDN (besides the functionality the API provides). <strong>It's the future!</strong></p>
+
+<blockquote>
+<p>Consider leveraging the power of Laravel's <a href="https://laravel.com/docs/5.6/socialite">Socialite package</a> to integrate social login into your API, and allow users to create accounts with social media profiles from Twitter, Facebook, etc.</p>
+</blockquote>
+
+<p>Looking for the source code? 💻 ⚙️  Find this completed project source code <a href="https://github.com/whoisryosuke/laravel-api-heroku">on Github here</a>.</p>
+
+<p>Stay regular,<br>
+Oscar</p>
+
+
+<hr>
+
+<p><strong>Keep Reading:</strong></p>
+
+<ul>
+<li><a href="https://devcenter.heroku.com/articles/getting-started-with-php#introduction">Heroku - Getting Started</a></li>
+<li><a href="https://devcenter.heroku.com/articles/getting-started-with-laravel">Heroku - Deploying Laravel</a></li>
+<li><a href="https://elements.heroku.com/addons/heroku-postgresql">Heroku - PostgresSQL DB Hosting</a></li>
+<li><a href="https://laravel.com">Laravel framework</a></li>
+<li><a href="https://laravel.com/docs/5.6/passport">Laravel - Passport package</a></li>
+<li><a href="https://jwt.io/">JSON Web Tokens / JWT</a></li>
+<li><a href="https://mikateach.com/setting-up-laravel-5-6-on-heroku/">Mikateach - Setting up Laravel 5.6 on Heroku</a></li>
+<li><a href="https://blog.pusher.com/build-rest-api-laravel-api-resources/">Pusher - Build REST API using Laravel</a></li>
+</ul>
+
+
+          </div>
+
+        </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--   Blog Single End   -->
+
+    <!--   Return To Top  -->
+    <a class="return-to-top text-white bg-base-color d-inline-block" href="javascript:void(0)"><i class="lni-arrow-up"></i></a>
+
+
+    <!--  JavaScripts  -->
+    <script src="../assets/js/jquery-3.4.1.min.js"></script>
+    <!--  Bootstrap Js  -->
+    <script src="../assets/js/bootstrap.js"></script>
+    <!--  Easing Js  -->
+    <script src="../assets/js/jquery.easing.min.js"></script>
+    <!--  Typed Js  -->
+    <script src="../assets/js/typed.js"></script>
+    <!--  Magnific Popup Js  -->
+    <script src="../assets/js/jquery.magnific-popup.min.js"></script>
+    <!--  Isotope Js  -->
+    <script src="../assets/js/isotope.pkgd.min.js"></script>
+    <!--  Owl Carousel Js  -->
+    <script src="../assets/js/owl.carousel.min.js"></script>
+    <!--  Particle Js  -->
+    <script src="../assets/js/particles-01.min.js"></script>
+    <!--  particles app Js  -->
+    <script src="../assets/js/particles-01.app.js"></script>
+    <!-- Map Js -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRemITiP7JRWpZwLhVt-T2x5MeUFE2KWs"></script>
+    <!--  Custom JS  -->
+    <script src="../assets/js/arshia.js"></script>
+
+  </body>
+</html>

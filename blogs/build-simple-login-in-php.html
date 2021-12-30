@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <!--Useful meta tags-->
+      <meta name="description" content="" />
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Scott Morgan</title>
+      <meta property="og:title" content="Scott Morgan"></meta>
+      <meta property="og:description" content="Full Stack Developer"></meta>
+      <meta property="og:image" content="../assets/img/scott-morgan.jpg"></meta>
+      <meta name="author" content="Scott Morgan" />
+
+      <!-- Favicon -->
+      <link rel="shortcut icon" type="image/x-icon" href="../assets/img/scott-morgan.jpg">
+
+      <!-- Google Fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet">
+
+      <!-- FontAwesome Css -->
+      <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+      <!-- Line icon Css -->
+      <link rel="stylesheet" href="../assets/css/LineIcons.css">
+      <!-- Bootstrap Css -->
+      <link rel="stylesheet" href="../assets/css/bootstrap.css">
+      <!-- Owl Carousel Css -->
+      <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
+      <!-- Magnific Popup Css -->
+      <link rel="stylesheet" href="../assets/css/magnific-popup.css">
+      <!-- Colors Css -->
+      <link rel="stylesheet" href="../assets/css/color/green-color.css" id="option-color">
+      <!--  Custom Style CSS  -->
+      <link rel="stylesheet" href="../assets/css/main.css">
+  </head>
+  <body class="flat-demo arshia-dark">
+
+    <!--  Pre Loader  -->
+    <div id="overlayer"></div>
+    <span class="loader"></span>
+
+
+        <!--    Header Start    -->
+        <header id="header" class="header fixed-top">
+            <nav id="scrollspy" class="navbar navbar-expand-lg header-nav">
+                <div class="container-fluid">
+                    <a class="navbar-brand font-weight-bold" href="../index.html">Alexander <span class="base-color">Radonjic</span></a>
+                    <!--  Navbar Toggler Button Start -->
+                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#toggle-menu" aria-controls="toggle-menu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="lni-menu size-md"></span>
+                    </button>
+                    <!--  Navbar Toggler Button End -->
+                    <div class="collapse navbar-collapse" id="toggle-menu">
+                        <ul class="navbar-nav nav-pills ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html#hero">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html#skills">Skills</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html#experience">Experience</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html#portfolio">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="../index.html#blog">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+    <!--    Hero Start    -->
+    <section class="section hero page-hero position-relative pt-5" id="hero">
+        <div class="container page-container">
+            <div class="row pt-5">
+                <div class="col-lg-12">
+                    <div class="title-content">
+                    </div>
+                </div>
+            </div>
+            <!-- Breadcrumb -->
+            <div class="row page-title pb-5">
+                <div class="col-12">
+                    <ul class="mb-0 breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="../index.html">Home</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="../index.html#blog">Blog</a>
+                        </li>
+                        <li class="breadcrumb-item">Build Simple Login in PHP</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  Blog Single Start  -->
+    <section id="blog-single" class="section py-5 blog-single">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 blog">
+                    <div class="rounded">
+                        <div class="text-md-left">
+                            <h1 class="mb-4 h4">Build Simple Login in PHP</h1>
+                            <div class="entry-meta mb-4">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <a class="base-color" href=""><i class="fa fa-calendar"></i>Jun 17, 2021</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="entry-image image-border mb-4">
+                                <img src="../assets/img/news/blog-6.jpg" alt="">
+                            </div>
+                            <div class="entry-content box-border p-3">
+                              <div class="crayons-article__main">
+
+          <div class="crayons-article__body text-styles spec__body" data-article-id="71242" id="article-body">
+            <p>Building a user authentication system for your Web application from scratch can be a deceptively tricky job. It seems easy at first, but there are so many details you have to consider - hashing the passwords properly, securing the user sessions, providing a way to reset forgotten passwords. Most modern frameworks offer boilerplate code for dealing with all of these issues but even if you’re not using a framework, do not despair. In this article, I’ll show you how to build a PHP application from scratch (with just a single dependence on an external library - DotEnv, so we can store our secrets in a .env file outside the code repository). The application will provide user login/logout, new user registration, and a ‘Forgot Password’ form by taking advantage of Okta’s simple OAuth 2.0 API.</p>
+
+<p>All you’ll need to follow the tutorial is an Okta developer account (<a href="https://developer.okta.com/signup/">you can create one for free</a>), PHP and Composer.</p>
+
+<h2>
+  <a name="why-use-okta-for-authentication" href="#why-use-okta-for-authentication" class="anchor">
+  </a>
+  Why Use Okta for Authentication?
+</h2>
+
+<p>Okta makes <a href="https://developer.okta.com/product/user-management/">identity management</a> easier, more secure, and more scalable than what you’re used to. Okta is an API service that allows you to create, edit, and securely store user accounts and user account data, and connect them with one or more applications. Our API enables you to:</p>
+
+<ul>
+<li>
+<a href="https://developer.okta.com/product/authentication/">Authenticate</a> and <a href="https://developer.okta.com/product/authorization/">authorize</a> your users</li>
+<li>Store data about your users</li>
+<li>Perform password-based and <a href="https://developer.okta.com/authentication-guide/social-login/">social login</a>
+</li>
+<li>Secure your application with <a href="https://developer.okta.com/use_cases/mfa/">multi-factor authentication</a>
+</li>
+<li>And much more! Check out our <a href="https://developer.okta.com/documentation/">product documentation</a> for more information</li>
+</ul>
+
+<p><a href="https://developer.okta.com/signup/">Register for a forever-free developer account</a>, and when you’re done, come back to learn more about building a PHP application with user authentication from scratch.</p>
+
+<h2>
+  <a name="create-a-free-okta-developer-account" href="#create-a-free-okta-developer-account" class="anchor">
+  </a>
+  Create a Free Okta Developer Account
+</h2>
+
+<p>Before you proceed, you need to log into your Okta account (or <a href="https://developer.okta.com/signup/">create a new one for free</a>) and create an OAuth application. You’ll need to get a client ID and a client secret for your application, and you’ll also need an API token so the application can register users remotely.</p>
+
+<p>Here are the step-by-step instructions:</p>
+
+<ol>
+<li>Go to the Applications menu item and click the ‘Add Application’ button:</li>
+</ol>
+
+<p><a href="https://res.cloudinary.com/practicaldev/image/fetch/s--mHrVDNE8--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://developer.okta.com/assets-jekyll/blog/php-simple-login/add-application-ec29d9f298f8a4213f5bcea00798fdeeddc844cba2f4d9a5e838270120099912.png" class="article-body-image-wrapper"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--mHrVDNE8--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://developer.okta.com/assets-jekyll/blog/php-simple-login/add-application-ec29d9f298f8a4213f5bcea00798fdeeddc844cba2f4d9a5e838270120099912.png" alt="Click Add Application" loading="lazy"></a></p>
+
+<ol>
+<li>Select <strong>Web</strong> and click <strong>Next</strong>.</li>
+</ol>
+
+<p><a href="https://res.cloudinary.com/practicaldev/image/fetch/s--LlUmXije--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://developer.okta.com/assets-jekyll/blog/php-simple-login/create-new-application-c356a96f200e7706a547b0159fc5bc4ea26f743b5a2029d75f1108a8d4399e88.png" class="article-body-image-wrapper"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--LlUmXije--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://developer.okta.com/assets-jekyll/blog/php-simple-login/create-new-application-c356a96f200e7706a547b0159fc5bc4ea26f743b5a2029d75f1108a8d4399e88.png" alt="Create a new Web application" loading="lazy"></a></p>
+
+<ol>
+<li>Enter a title, and set <a href="http://localhost:8080/">http://localhost:8080/</a> as both the Base URI and Login Redirect URI, then click Done. You can leave the rest of the settings as they are:</li>
+</ol>
+
+<p><a href="https://res.cloudinary.com/practicaldev/image/fetch/s--1zcgqTER--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://developer.okta.com/assets-jekyll/blog/php-simple-login/application-settings-11e93f1c01f1348a0b42b8c56579703707e76e7895e55a1d7b4bbf951eaf8e9b.png" class="article-body-image-wrapper"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--1zcgqTER--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://developer.okta.com/assets-jekyll/blog/php-simple-login/application-settings-11e93f1c01f1348a0b42b8c56579703707e76e7895e55a1d7b4bbf951eaf8e9b.png" alt="Application Settings" loading="lazy"></a></p>
+
+<ol>
+<li><p>Copy the Client ID and Client Secret from the application settings.</p></li>
+<li><p>Go to <strong>API</strong> &gt; <strong>Tokens</strong> , and click <strong>Create Token</strong> :</p></li>
+</ol>
+
+<p><a href="https://res.cloudinary.com/practicaldev/image/fetch/s--Zs97XTAj--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://developer.okta.com/assets-jekyll/blog/php-simple-login/create-token-4815f155635cca9fc4f230e719bda59e9c6a9f6cf2a54099cc26e7543793b98e.png" class="article-body-image-wrapper"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--Zs97XTAj--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://developer.okta.com/assets-jekyll/blog/php-simple-login/create-token-4815f155635cca9fc4f230e719bda59e9c6a9f6cf2a54099cc26e7543793b98e.png" alt="Create a Token" loading="lazy"></a></p>
+
+<p>Enter a title for your token and make sure to copy the value of the token and store it safely. You will only be able to see it once - if you lose it, you’ll need to create a new token.</p>
+
+<p>Take note of your main organization URL (it looks like https://{yourOktaDomain}) - you will need this as well.</p>
+
+<h2>
+  <a name="create-the-project-skeleton" href="#create-the-project-skeleton" class="anchor">
+  </a>
+  Create the Project Skeleton
+</h2>
+
+<p>Start by creating a /src directory and a simple <code>composer.json</code> file in the top directory with just one dependency: the DotEnv library which will allow us to keep our Okta authentication details in a <code>.env</code> file outside our code repository:</p>
+
+<p><code>composer.json</code><br>
+</p>
+
+<div class="highlight"><pre class="highlight json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"require"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"vlucas/phpdotenv"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^2.4"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"autoload"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"psr-4"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"Src\\"</span><span class="p">:</span><span class="w"> </span><span class="s2">"src/"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre></div>
+
+
+
+<p>We’ve also configured a PSR-4 autoloader which will automatically look for PHP classes in the <code>/src</code> directory.</p>
+
+<p>We can install our dependencies now:<br>
+</p>
+
+<div class="highlight"><pre class="highlight plaintext"><code>composer install
+
+</code></pre></div>
+
+
+
+<p>We have a <code>/vendor</code> directory, and the DotEnv dependency is installed (we can also use our autoloader to load our classes from <code>/src</code> with no <code>include()</code> calls).</p>
+
+<p>Let’s create a <code>.gitignore</code> file for our project with two lines in it, so the <code>/vendor</code> directory and our local <code>.env</code> file will be ignored:<br>
+</p>
+
+<div class="highlight"><pre class="highlight plaintext"><code>/vendor
+.env
+
+</code></pre></div>
+
+
+
+<p>Next we’ll create a <code>.env.example</code> file for our Okta authentication variables:<br>
+</p>
+
+<div class="highlight"><pre class="highlight plaintext"><code>CLIENT_ID=
+CLIENT_SECRET=
+REDIRECT_URI=http://localhost:8080/
+METADATA_URL=https://{yourOktaDomain}/oauth2/default/.well-known/oauth-authorization-server
+API_URL_BASE=https://{yourOktaDomain}/api/v1/
+API_TOKEN=
+
+</code></pre></div>
+
+
+
+<p>and a <code>.env</code> file where we’ll fill in our actual details from our Okta account (it will be ignored by Git so it won’t end up in our repository).</p>
+
+<p>The project will have the following directory structure (you can create the rest of the files now):<br>
+</p>
+
+<div class="highlight"><pre class="highlight plaintext"><code>/public/index.php
+/src
+    /controllers
+    /services
+    /views
+bootstrap.php
+.env
+.env.example
+
+</code></pre></div>
+
+
+
+<p>The <code>/public/index.php</code> file is our simple front controller. It loads the <code>bootstrap.php</code> script and then handles the incoming HTTP request, delegating it to a controller. Here’s the initial version:</p>
+
+<p><code>/public/index.php</code><br>
+</p>
+
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<span class="k">require</span><span class="p">(</span><span class="s1">'../bootstrap.php'</span><span class="p">);</span>
+
+<span class="c1">// view data</span>
+<span class="nv">$data</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+
+<span class="nx">view</span><span class="p">(</span><span class="s1">'home'</span><span class="p">,</span> <span class="nv">$data</span><span class="p">);</span>
+
+</code></pre></div>
+
+
+
+<p>Right now, it simply loads the ‘home’ view with no data.</p>
+
+<p>The <code>bootstrap.php</code> script starts the autoloading, initializes our dependencies (only DotEnv in this case), starts a session and provides the helper function <code>view()</code> used to load view files (we already used it in <code>/public/index.php</code>). Here’s the full version of the <code>bootstrap.php</code> file:</p>
+
+<p><code>bootstrap.php</code><br>
+</p>
+
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<span class="k">require</span> <span class="s1">'vendor/autoload.php'</span><span class="p">;</span>
+<span class="kn">use</span> <span class="nn">Dotenv\Dotenv</span><span class="p">;</span>
+
+<span class="nv">$dotenv</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">DotEnv</span><span class="p">(</span> <span class="k">__DIR__</span> <span class="p">);</span>
+<span class="nv">$dotenv</span><span class="o">-&gt;</span><span class="na">load</span><span class="p">();</span>
+
+<span class="nb">session_start</span><span class="p">();</span>
+
+<span class="k">function</span> <span class="nf">view</span><span class="p">(</span><span class="nv">$title</span><span class="p">,</span> <span class="nv">$data</span> <span class="o">=</span> <span class="kc">null</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="nv">$filename</span> <span class="o">=</span> <span class="k">__DIR__</span><span class="o">.</span> <span class="s1">'/src/views/'</span> <span class="o">.</span> <span class="nv">$title</span> <span class="o">.</span> <span class="s1">'.php'</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nb">file_exists</span><span class="p">(</span><span class="nv">$filename</span><span class="p">))</span> <span class="p">{</span>
+        <span class="k">include</span><span class="p">(</span><span class="nv">$filename</span><span class="p">);</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="k">throw</span> <span class="k">new</span> <span class="nx">Exception</span><span class="p">(</span><span class="s1">'View '</span> <span class="o">.</span> <span class="nv">$title</span> <span class="o">.</span> <span class="s1">' not found!'</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+</code></pre></div>
+
+
+
+<p>The <code>/src/controllers</code> directory holds our controller classes. The <code>/src/services</code> directory holds the classes of our service layer. The <code>/src/views</code> directory holds our views (we use simple PHP views in this project, without a templating system).</p>
+
+<p>Let’s start building the views:</p>
+
+<p><code>/src/views/home.php</code><br>
+</p>
+
+<div class="highlight"><pre class="highlight plaintext"><code>&lt;?php view('header', $data); ?&gt;
+&lt;section class="hero"&gt;
+    &lt;div class="hero-body"&gt;
+        &lt;div class="container"&gt;
+
+&lt;?php
+    if (isset($data['thank_you'])) {
+?&gt;
+&lt;div class="notification is-info"&gt;
+&lt;?php
+    echo $data['thank_you'];
+?&gt;
+&lt;/div&gt;
+&lt;?php
+    }
+?&gt;
+
+&lt;?php
+    if (isset($data['loginError'])) {
+?&gt;
+&lt;div class="notification is-danger"&gt;
+&lt;?php
+    echo $data['loginError'];
+?&gt;
+&lt;/div&gt;
+&lt;?php
+    }
+?&gt;
+
+&lt;?php
+    if (isset($_SESSION['username'])) {
+?&gt;
+            &lt;p class="subtitle is-4"&gt;
+            This is some great content for logged in users
+            &lt;p&gt;
+&lt;?php
+    } else {
+?&gt;
+            &lt;p class="subtitle is-4"&gt;
+            You need to login to access the content!
+            &lt;/p&gt;
+&lt;?php
+    }
+?&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+&lt;?php view('footer'); ?&gt;
+
+</code></pre></div>
+
+
+
+<p>The Home page view loads a header and a footer, and it has the capability to display notification messages and error messages. It also shows different content depending on if the user is logged in (determined by checking <code>$_SESSION['username']</code>) or not.</p>
+
+<p>Here are the full version of the header and the footer views:</p>
+
+<p><code>/src/views/header.php</code><br>
+</p>
+
+<div class="highlight"><pre class="highlight plaintext"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+        &lt;meta name="description" content="PHP Login App bd-index-custom-example"&gt;
+        &lt;title&gt;Core PHP + Okta Login Example &lt;/title&gt;
+        &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css"&gt;
+    &lt;/head&gt;
+    &lt;body class="layout-default"&gt;
+        &lt;nav id="navbar" class="navbar has-shadow is-spaced"&gt;
+            &lt;div class="container"&gt;
+            &lt;div class="content"&gt;
+                &lt;h1&gt;Core PHP + Okta Login Example&lt;/h1&gt;
+                &lt;?php
+                    if (isset($_SESSION['username'])) {
+                ?&gt;
+                        &lt;p&gt;
+                            Logged in as &lt;?php echo $_SESSION['username'] ?&gt;
+                        &lt;/p&gt;
+                        &lt;p&gt;&lt;a href="/?logout"&gt;Log Out&lt;/a&gt;&lt;/p&gt;
+                &lt;?php
+                    } else {
+                ?&gt;
+                        &lt;p&gt;Not logged in&lt;/p&gt;
+                        &lt;p&gt;&lt;a href="/?login"&gt;Log In&lt;/a&gt; | &lt;a href="/?forgot"&gt;Forgot Password&lt;/a&gt; | &lt;a href="/?register"&gt;Register&lt;/a&gt;&lt;/p&gt;
+                &lt;?php
+                    }
+                ?&gt;
+            &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/nav&gt;
+
+
+/src/views/footer.php
+
+   &lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre></div>
+
+
+
+<p>The header loads the Bulma CSS framework and shows the username plus a logout link if there is a logged in user, or Login/Forgot Password/Register links if there is no logged in user.</p>
+
+<p>Start the built-in PHP server:<br>
+</p>
+
+<div class="highlight"><pre class="highlight shell"><code>php <span class="nt">-S</span> 127.0.0.1:8080 <span class="nt">-t</span> public
+
+</code></pre></div>
+
+
+
+<p>When you load <a href="http://localhost:8080">http://localhost:8080</a>, you should see the app:</p>
+
+<p><a href="https://res.cloudinary.com/practicaldev/image/fetch/s--IR9fFOWD--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://developer.okta.com/assets-jekyll/blog/php-simple-login/app-5c704b0476bced7d779ef6a869d20656c73c7d7b12380a233a0d0ed8b14cf254.png" class="article-body-image-wrapper"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--IR9fFOWD--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://developer.okta.com/assets-jekyll/blog/php-simple-login/app-5c704b0476bced7d779ef6a869d20656c73c7d7b12380a233a0d0ed8b14cf254.png" alt="The application running" loading="lazy"></a></p>
+
+<h2>
+  <a name="implement-okta-login-logout" href="#implement-okta-login-logout" class="anchor">
+  </a>
+  Implement Okta Login / Logout
+</h2>
+
+<p>The Okta login happens in several stages:</p>
+
+<ol>
+<li>Build a login URL</li>
+<li>Redirect to the URL</li>
+<li>Okta authentication happens remotely and then redirects back to our Redirect URI</li>
+<li>Handle the response and authorize the user in our app.</li>
+</ol>
+
+<p>We’ll modify <code>public/index.php</code> to handling steps 1 and 2 above, adding this above the line <code>view('home');</code>:<br>
+</p>
+
+<div class="highlight"><pre class="highlight php"><code><span class="c1">// build login URL and redirect the user</span>
+<span class="k">if</span> <span class="p">(</span><span class="nb">isset</span><span class="p">(</span><span class="nv">$_REQUEST</span><span class="p">[</span><span class="s1">'login'</span><span class="p">])</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="o">!</span> <span class="nb">isset</span><span class="p">(</span><span class="nv">$_SESSION</span><span class="p">[</span><span class="s1">'username'</span><span class="p">])))</span> <span class="p">{</span>
+    <span class="nv">$_SESSION</span><span class="p">[</span><span class="s1">'state'</span><span class="p">]</span> <span class="o">=</span> <span class="nb">bin2hex</span><span class="p">(</span><span class="nb">random_bytes</span><span class="p">(</span><span class="mi">5</span><span class="p">));</span>
+    <span class="nv">$authorizeUrl</span> <span class="o">=</span> <span class="nv">$oktaApi</span><span class="o">-&gt;</span><span class="na">buildAuthorizeUrl</span><span class="p">(</span><span class="nv">$_SESSION</span><span class="p">[</span><span class="s1">'state'</span><span class="p">]);</span>
+    <span class="nb">header</span><span class="p">(</span><span class="s1">'Location: '</span> <span class="o">.</span> <span class="nv">$authorizeUrl</span><span class="p">);</span>
+    <span class="k">die</span><span class="p">();</span>
+<span class="p">}</span>
+
+</code></pre></div>
+
+
+
+<p>and also to handle step 4 when it receives the redirect back (which includes a code from Okta):<br>
+</p>
+
+<div class="highlight"><pre class="highlight php"><code><span class="k">if</span> <span class="p">(</span><span class="nb">isset</span><span class="p">(</span><span class="nv">$_GET</span><span class="p">[</span><span class="s1">'code'</span><span class="p">]))</span> <span class="p">{</span>
+    <span class="nv">$result</span> <span class="o">=</span> <span class="nv">$oktaApi</span><span class="o">-&gt;</span><span class="na">authorizeUser</span><span class="p">();</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nb">isset</span><span class="p">(</span><span class="nv">$result</span><span class="p">[</span><span class="s1">'error'</span><span class="p">]))</span> <span class="p">{</span>
+        <span class="nv">$data</span><span class="p">[</span><span class="s1">'loginError'</span><span class="p">]</span> <span class="o">=</span> <span class="nv">$result</span><span class="p">[</span><span class="s1">'errorMessage'</span><span class="p">];</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+</code></pre></div>
+
+
+
+<p>We’ll also add a very simple Logout handler which just unsets the session variable <code>username</code>.</p>
+
+<p>Here’s the new version:</p>
+
+<p><code>/public/index.php</code><br>
+</p>
+
+<div class="highlight"><pre class="highlight plaintext"><code>&lt;?php
+require('../bootstrap.php');
+
+use Src\Services\OktaApiService;
+
+$oktaApi = new OktaApiService;
+
+// view data
+$data = null;
+
+// build login URL and redirect the user
+if (isset($_REQUEST['login']) &amp;&amp; (! isset($_SESSION['username']))) {
+    $_SESSION['state'] = bin2hex(random_bytes(5));
+    $authorizeUrl = $oktaApi-&gt;buildAuthorizeUrl($_SESSION['state']);
+    header('Location: ' . $authorizeUrl);
+    die();
+}
+
+// handle the redirect back
+if (isset($_GET['code'])) {
+    $result = $oktaApi-&gt;authorizeUser();
+    if (isset($result['error'])) {
+        $data['loginError'] = $result['errorMessage'];
+    }
+}
+
+if (isset($_REQUEST['logout'])) {
+    unset($_SESSION['username']);
+    header('Location: /');
+    die();
+}
+
+view('home', $data);
+
+</code></pre></div>
+
+
+
+<p>Let’s also build the <code>OktaApiService</code> and add the methods we need (<code>buildAuthorizeUrl()</code> and <code>authorizeUser()</code>):</p>
+
+<p><code>/src/services/OktaApiService.php</code><br>
+</p>
+
+<div class="highlight"><pre class="highlight plaintext"><code>&lt;?php
+namespace Src\Services;
+
+class OktaApiService
+{
+    private $clientId;
+    private $clientSecret;
+    private $redirectUri;
+    private $metadataUrl;
+    private $apiToken;
+    private $apiUrlBase;
+
+    public function __construct()
+    {
+        $this-&gt;clientId = getenv('CLIENT_ID');
+        $this-&gt;clientSecret = getenv('CLIENT_SECRET');
+        $this-&gt;redirectUri = getenv('REDIRECT_URI');
+        $this-&gt;metadataUrl = getenv('METADATA_URL');
+        $this-&gt;apiToken = getenv('API_TOKEN');
+        $this-&gt;apiUrlBase = getenv('API_URL_BASE');
+    }
+
+    public function buildAuthorizeUrl($state)
+    {
+        $metadata = $this-&gt;httpRequest($this-&gt;metadataUrl);
+        $url = $metadata-&gt;authorization_endpoint . '?' . http_build_query([
+            'response_type' =&gt; 'code',
+            'client_id' =&gt; $this-&gt;clientId,
+            'redirect_uri' =&gt; $this-&gt;redirectUri,
+            'state' =&gt; $state,
+        ]);
+        return $url;
+    }
+
+    public function authorizeUser()
+    {
+        if ($_SESSION['state'] != $_GET['state']) {
+            $result['error'] = true;
+            $result['errorMessage'] = 'Authorization server returned an invalid state parameter';
+            return $result;
+        }
+
+        if (isset($_GET['error'])) {
+            $result['error'] = true;
+            $result['errorMessage'] = 'Authorization server returned an error: '.htmlspecialchars($_GET['error']);
+            return $result;
+        }
+
+        $metadata = $this-&gt;httpRequest($this-&gt;metadataUrl);
+
+        $response = $this-&gt;httpRequest($metadata-&gt;token_endpoint, [
+            'grant_type' =&gt; 'authorization_code',
+            'code' =&gt; $_GET['code'],
+            'redirect_uri' =&gt; $this-&gt;redirectUri,
+            'client_id' =&gt; $this-&gt;clientId,
+            'client_secret' =&gt; $this-&gt;clientSecret
+        ]);
+
+        if (! isset($response-&gt;access_token)) {
+            $result['error'] = true;
+            $result['errorMessage'] = 'Error fetching access token!';
+            return $result;
+        }
+        $_SESSION['access_token'] = $response-&gt;access_token;
+
+        $token = $this-&gt;httpRequest($metadata-&gt;introspection_endpoint, [
+            'token' =&gt; $response-&gt;access_token,
+            'client_id' =&gt; $this-&gt;clientId,
+            'client_secret' =&gt; $this-&gt;clientSecret
+        ]);
+
+        if ($token-&gt;active == 1) {
+            $_SESSION['username'] = $token-&gt;username;
+            $result['success'] = true;
+            return $result;
+        }
+    }
+
+    private function httpRequest($url, $params = null)
+    {
+        $ch = curl_init($url);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        if ($params) {
+            curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($params));
+        }
+        return json_decode(curl_exec($ch));
+    }
+}
+
+</code></pre></div>
+
+
+
+<p>Quite a few things happen in the <code>OktaApiService</code> class, so let me explain the process:</p>
+
+<p>Before building the authorization URL, we generate a random <code>state</code> value which we use to verify the response:<br>
+</p>
+
+<div class="highlight"><pre class="highlight php"><code><span class="nv">$_SESSION</span><span class="p">[</span><span class="s1">'state'</span><span class="p">]</span> <span class="o">=</span> <span class="nb">bin2hex</span><span class="p">(</span><span class="nb">random_bytes</span><span class="p">(</span><span class="mi">5</span><span class="p">));</span>
+<span class="nv">$authorizeUrl</span> <span class="o">=</span> <span class="nv">$oktaApi</span><span class="o">-&gt;</span><span class="na">buildAuthorizeUrl</span><span class="p">(</span><span class="nv">$_SESSION</span><span class="p">[</span><span class="s1">'state'</span><span class="p">]);</span>
+
+</code></pre></div>
+
+
+
+<p>The method <code>buildAuthorizeUrl()</code> uses a call to the metadata URL to get the authorization endpoint for our server, and then it builds a query for that endpoint:<br>
+</p>
+
+<div class="highlight"><pre class="highlight php"><code>       <span class="nv">$metadata</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">httpRequest</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">metadataUrl</span><span class="p">);</span>
+        <span class="nv">$url</span> <span class="o">=</span> <span class="nv">$metadata</span><span class="o">-&gt;</span><span class="na">authorization_endpoint</span> <span class="o">.</span> <span class="s1">'?'</span> <span class="o">.</span> <span class="nb">http_build_query</span><span class="p">([</span>
+            <span class="s1">'response_type'</span> <span class="o">=&gt;</span> <span class="s1">'code'</span><span class="p">,</span>
+            <span class="s1">'client_id'</span> <span class="o">=&gt;</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">clientId</span><span class="p">,</span>
+            <span class="s1">'redirect_uri'</span> <span class="o">=&gt;</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">redirectUri</span><span class="p">,</span>
+            <span class="s1">'state'</span> <span class="o">=&gt;</span> <span class="nv">$state</span><span class="p">,</span>
+        <span class="p">]);</span>
+
+</code></pre></div>
+
+
+
+<p>When we get the redirect back, we receive the state variable that we sent with the authorization redirect and a code from Okta. When we get a code, we call the <code>authorizeUser()</code> method where we first verify that the state value matches and there’s no error code in the response:<br>
+</p>
+
+<div class="highlight"><pre class="highlight php"><code>       <span class="k">if</span> <span class="p">(</span><span class="nv">$_SESSION</span><span class="p">[</span><span class="s1">'state'</span><span class="p">]</span> <span class="o">!=</span> <span class="nv">$_GET</span><span class="p">[</span><span class="s1">'state'</span><span class="p">])</span> <span class="p">{</span>
+            <span class="nv">$result</span><span class="p">[</span><span class="s1">'error'</span><span class="p">]</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+            <span class="nv">$result</span><span class="p">[</span><span class="s1">'errorMessage'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'Authorization server returned an invalid state parameter'</span><span class="p">;</span>
+            <span class="k">return</span> <span class="nv">$result</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="k">if</span> <span class="p">(</span><span class="nb">isset</span><span class="p">(</span><span class="nv">$_GET</span><span class="p">[</span><span class="s1">'error'</span><span class="p">]))</span> <span class="p">{</span>
+            <span class="nv">$result</span><span class="p">[</span><span class="s1">'error'</span><span class="p">]</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+            <span class="nv">$result</span><span class="p">[</span><span class="s1">'errorMessage'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'Authorization server returned an error: '</span><span class="o">.</span><span class="nb">htmlspecialchars</span><span class="p">(</span><span class="nv">$_GET</span><span class="p">[</span><span class="s1">'error'</span><span class="p">]);</span>
+            <span class="k">return</span> <span class="nv">$result</span><span class="p">;</span>
+        <span class="p">}</span>
+
+</code></pre></div>
+
+
+
+<p>Then we use the <code>token_endpoint</code> (from the metadata call) to exchange the code for an access token:<br>
+</p>
+
+<div class="highlight"><pre class="highlight php"><code>       <span class="nv">$metadata</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">httpRequest</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">metadataUrl</span><span class="p">);</span>
+
+        <span class="nv">$response</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">httpRequest</span><span class="p">(</span><span class="nv">$metadata</span><span class="o">-&gt;</span><span class="na">token_endpoint</span><span class="p">,</span> <span class="p">[</span>
+            <span class="s1">'grant_type'</span> <span class="o">=&gt;</span> <span class="s1">'authorization_code'</span><span class="p">,</span>
+            <span class="s1">'code'</span> <span class="o">=&gt;</span> <span class="nv">$_GET</span><span class="p">[</span><span class="s1">'code'</span><span class="p">],</span>
+            <span class="s1">'redirect_uri'</span> <span class="o">=&gt;</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">redirectUri</span><span class="p">,</span>
+            <span class="s1">'client_id'</span> <span class="o">=&gt;</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">clientId</span><span class="p">,</span>
+            <span class="s1">'client_secret'</span> <span class="o">=&gt;</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">clientSecret</span>
+        <span class="p">]);</span>
+
+        <span class="k">if</span> <span class="p">(</span><span class="o">!</span> <span class="nb">isset</span><span class="p">(</span><span class="nv">$response</span><span class="o">-&gt;</span><span class="na">access_token</span><span class="p">))</span> <span class="p">{</span>
+            <span class="nv">$result</span><span class="p">[</span><span class="s1">'error'</span><span class="p">]</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+            <span class="nv">$result</span><span class="p">[</span><span class="s1">'errorMessage'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'Error fetching access token!'</span><span class="p">;</span>
+            <span class="k">return</span> <span class="nv">$result</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="nv">$_SESSION</span><span class="p">[</span><span class="s1">'access_token'</span><span class="p">]</span> <span class="o">=</span> <span class="nv">$response</span><span class="o">-&gt;</span><span class="na">access_token</span><span class="p">;</span>
+
+</code></pre></div>
+
+
+
+<p>After that, we use the introspection endpoint to confirm the token is valid and active, and to get the username of the newly authorized user:<br>
+</p>
+
+<div class="highlight"><pre class="highlight php"><code>       <span class="nv">$token</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">httpRequest</span><span class="p">(</span><span class="nv">$metadata</span><span class="o">-&gt;</span><span class="na">introspection_endpoint</span><span class="p">,</span> <span class="p">[</span>
+            <span class="s1">'token'</span> <span class="o">=&gt;</span> <span class="nv">$response</span><span class="o">-&gt;</span><span class="na">access_token</span><span class="p">,</span>
+            <span class="s1">'client_id'</span> <span class="o">=&gt;</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">clientId</span><span class="p">,</span>
+            <span class="s1">'client_secret'</span> <span class="o">=&gt;</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">clientSecret</span>
+        <span class="p">]);</span>
+
+        <span class="k">if</span> <span class="p">(</span><span class="nv">$token</span><span class="o">-&gt;</span><span class="na">active</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nv">$_SESSION</span><span class="p">[</span><span class="s1">'username'</span><span class="p">]</span> <span class="o">=</span> <span class="nv">$token</span><span class="o">-&gt;</span><span class="na">username</span><span class="p">;</span>
+            <span class="nv">$result</span><span class="p">[</span><span class="s1">'success'</span><span class="p">]</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+            <span class="k">return</span> <span class="nv">$result</span><span class="p">;</span>
+        <span class="p">}</span>
+
+</code></pre></div>
+
+
+
+<h2>
+  <a name="new-user-registration-through-the-okta-api" href="#new-user-registration-through-the-okta-api" class="anchor">
+  </a>
+  New User Registration Through the Okta API
+</h2>
+
+<p>The new user registration will be handled in a <code>UserController</code> class. We’ll need three handlers in the front controller:</p>
+
+<p><code>public/index.php</code><br>
+</p>
+
+<div class="highlight"><pre class="highlight php"><code><span class="o">...</span>
+<span class="kn">use</span> <span class="nn">Src\Controllers\UserController</span><span class="p">;</span>
+<span class="o">...</span>
+<span class="nv">$userController</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">UserController</span><span class="p">(</span><span class="nv">$oktaApi</span><span class="p">);</span>
+<span class="o">...</span>
+<span class="k">if</span> <span class="p">(</span><span class="nb">isset</span><span class="p">(</span><span class="nv">$_REQUEST</span><span class="p">[</span><span class="s1">'register'</span><span class="p">]))</span> <span class="p">{</span>
+    <span class="nx">view</span><span class="p">(</span><span class="s1">'register'</span><span class="p">);</span>
+    <span class="k">die</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nb">isset</span><span class="p">(</span><span class="nv">$_REQUEST</span><span class="p">[</span><span class="s1">'command'</span><span class="p">])</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="nv">$_REQUEST</span><span class="p">[</span><span class="s1">'command'</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'register'</span><span class="p">))</span> <span class="p">{</span>
+    <span class="nv">$userController</span><span class="o">-&gt;</span><span class="na">handleRegistrationPost</span><span class="p">();</span>
+    <span class="k">die</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nb">isset</span><span class="p">(</span><span class="nv">$_REQUEST</span><span class="p">[</span><span class="s1">'thankyou'</span><span class="p">]))</span> <span class="p">{</span>
+    <span class="nv">$data</span><span class="p">[</span><span class="s1">'thank_you'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'Thank you for your registration!'</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="o">...</span>
+
+</code></pre></div>
+
+
+
+<p>The first handler simply loads the <code>register</code> view when the <strong>Register</strong> link is clicked:</p>
+
+<p><code>/src/views/register.php</code><br>
+</p>
+
+<div class="highlight"><pre class="highlight plaintext"><code>&lt;?php view('header', $data); ?&gt;
+&lt;section class="hero"&gt;
+    &lt;div class="hero-body"&gt;
+        &lt;div class="container"&gt;
+            &lt;form method="post" action="/"&gt;
+
+&lt;?php
+    if ($data &amp;&amp; $data['errors']) {
+?&gt;
+&lt;div class="notification is-danger"&gt;
+&lt;?php
+    echo "Errors:";
+    echo $data['errorMessage'];
+?&gt;
+&lt;/div&gt;
+&lt;?php
+    }
+?&gt;
+
+&lt;div class="field"&gt;
+    &lt;label class="label"&gt;First Name&lt;/label&gt;
+    &lt;div class="control"&gt;
+        &lt;input class="input" name="first_name" type="text" value="&lt;?php if ($data) { echo $data['input']['first_name']; } ?&gt;"&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="field"&gt;
+    &lt;label class="label"&gt;Last Name&lt;/label&gt;
+    &lt;div class="control"&gt;
+        &lt;input class="input" name="last_name" type="text" value="&lt;?php if ($data) { echo $data['input']['last_name']; } ?&gt;"&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="field"&gt;
+    &lt;label class="label"&gt;Email&lt;/label&gt;
+    &lt;div class="control"&gt;
+        &lt;input class="input" name="email" type="email" value="&lt;?php if ($data) { echo $data['input']['email']; } ?&gt;"&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="field"&gt;
+    &lt;label class="label"&gt;Password&lt;/label&gt;
+    &lt;div class="control"&gt;
+        &lt;input class="input" name="password" type="password" value=""&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="field"&gt;
+    &lt;label class="label"&gt;Repeat Password&lt;/label&gt;
+    &lt;div class="control"&gt;
+        &lt;input class="input" name="repeat_password" type="password" value=""&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;input type="hidden" name="command" value="register"&gt;
+
+&lt;div class="control"&gt;
+    &lt;button class="button is-link"&gt;Register&lt;/button&gt;
+    &lt;a class="button is-link" href="/"&gt;Cancel&lt;/a&gt;
+&lt;/div&gt;
+
+            &lt;/form&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+&lt;?php view('footer'); ?&gt;
+
+</code></pre></div>
+
+
+
+<p>The second handler delegates to the user controller when the form is submitted:</p>
+
+<p><code>/src/controllers/UserController.php</code><br>
+</p>
+
+<div class="highlight"><pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<span class="kn">namespace</span> <span class="nn">Src\Controllers</span><span class="p">;</span>
+
+<span class="kn">use</span> <span class="nn">Src\Services\OktaApiService</span><span class="p">;</span>
+
+<span class="kd">class</span> <span class="nc">UserController</span>
+<span class="p">{</span>
+
+    <span class="k">private</span> <span class="nv">$errors</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+    <span class="k">private</span> <span class="nv">$errorMessage</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">__construct</span><span class="p">(</span><span class="nx">OktaApiService</span> <span class="nv">$oktaApi</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">oktaApi</span> <span class="o">=</span> <span class="nv">$oktaApi</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">handleRegistrationPost</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nv">$_SERVER</span><span class="p">[</span><span class="s1">'REQUEST_METHOD'</span><span class="p">]</span> <span class="o">===</span> <span class="s1">'POST'</span><span class="p">)</span> <span class="p">{</span>
+
+            <span class="nv">$input</span> <span class="o">=</span> <span class="p">[</span>
+                <span class="s1">'first_name'</span> <span class="o">=&gt;</span> <span class="nv">$_POST</span><span class="p">[</span><span class="s1">'first_name'</span><span class="p">],</span>
+                <span class="s1">'last_name'</span> <span class="o">=&gt;</span> <span class="nv">$_POST</span><span class="p">[</span><span class="s1">'last_name'</span><span class="p">],</span>
+                <span class="s1">'email'</span> <span class="o">=&gt;</span> <span class="nv">$_POST</span><span class="p">[</span><span class="s1">'email'</span><span class="p">],</span>
+                <span class="s1">'password'</span> <span class="o">=&gt;</span> <span class="nv">$_POST</span><span class="p">[</span><span class="s1">'password'</span><span class="p">],</span>
+                <span class="s1">'repeat_password'</span> <span class="o">=&gt;</span> <span class="nv">$_POST</span><span class="p">[</span><span class="s1">'repeat_password'</span><span class="p">],</span>
+            <span class="p">];</span>
+
+            <span class="c1">// local form validation</span>
+            <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">validateRegistrationForm</span><span class="p">(</span><span class="nv">$input</span><span class="p">);</span>
+            <span class="k">if</span> <span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">errors</span><span class="p">)</span> <span class="p">{</span>
+                <span class="nv">$viewData</span> <span class="o">=</span> <span class="p">[</span>
+                    <span class="s1">'input'</span> <span class="o">=&gt;</span> <span class="nv">$input</span><span class="p">,</span>
+                    <span class="s1">'errors'</span> <span class="o">=&gt;</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">errors</span><span class="p">,</span>
+                    <span class="s1">'errorMessage'</span> <span class="o">=&gt;</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">errorMessage</span>
+                <span class="p">];</span>
+                <span class="nx">view</span><span class="p">(</span><span class="s1">'register'</span><span class="p">,</span> <span class="nv">$viewData</span><span class="p">);</span>
+                <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+            <span class="p">}</span>
+
+            <span class="c1">// if local validation passes, attempt to register the user</span>
+            <span class="c1">// via the Okta API</span>
+            <span class="nv">$result</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">oktaApi</span><span class="o">-&gt;</span><span class="na">registerUser</span><span class="p">(</span><span class="nv">$input</span><span class="p">);</span>
+            <span class="nv">$result</span> <span class="o">=</span> <span class="nb">json_decode</span><span class="p">(</span><span class="nv">$result</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+            <span class="k">if</span> <span class="p">(</span><span class="nb">isset</span><span class="p">(</span><span class="nv">$result</span><span class="p">[</span><span class="s1">'errorCode'</span><span class="p">]))</span> <span class="p">{</span>
+                <span class="nv">$viewData</span> <span class="o">=</span> <span class="p">[</span>
+                    <span class="s1">'input'</span> <span class="o">=&gt;</span> <span class="nv">$input</span><span class="p">,</span>
+                    <span class="s1">'errors'</span> <span class="o">=&gt;</span> <span class="kc">true</span><span class="p">,</span>
+                    <span class="s1">'errorMessage'</span> <span class="o">=&gt;</span> <span class="s1">'&lt;br&gt;(Okta) '</span> <span class="o">.</span> <span class="nv">$result</span><span class="p">[</span><span class="s1">'errorCauses'</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s1">'errorSummary'</span><span class="p">]</span>
+                <span class="p">];</span>
+                <span class="nx">view</span><span class="p">(</span><span class="s1">'register'</span><span class="p">,</span> <span class="nv">$viewData</span><span class="p">);</span>
+                <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+            <span class="p">}</span>
+
+            <span class="nb">header</span><span class="p">(</span><span class="s1">'Location: /?thankyou'</span><span class="p">);</span>
+            <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="nb">header</span><span class="p">(</span><span class="s1">'HTTP/1.0 405 Method Not Allowed'</span><span class="p">);</span>
+        <span class="k">die</span><span class="p">();</span>
+    <span class="p">}</span>
+
+    <span class="k">private</span> <span class="k">function</span> <span class="nf">validateRegistrationForm</span><span class="p">(</span><span class="nv">$input</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="nv">$errorMessage</span> <span class="o">=</span> <span class="s1">''</span><span class="p">;</span>
+        <span class="nv">$errors</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+
+        <span class="c1">// validate field lengths</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nb">strlen</span><span class="p">(</span><span class="nv">$input</span><span class="p">[</span><span class="s1">'first_name'</span><span class="p">])</span> <span class="o">&gt;</span> <span class="mi">50</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nv">$errorMessage</span> <span class="o">.=</span> <span class="s2">"&lt;br&gt;'First Name' is too long (50 characters max)!"</span><span class="p">;</span>
+            <span class="nv">$errors</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nb">strlen</span><span class="p">(</span><span class="nv">$input</span><span class="p">[</span><span class="s1">'last_name'</span><span class="p">])</span> <span class="o">&gt;</span> <span class="mi">50</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nv">$errorMessage</span> <span class="o">.=</span> <span class="s2">"&lt;br&gt;'Last Name' is too long (50 characters max)!"</span><span class="p">;</span>
+            <span class="nv">$errors</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nb">strlen</span><span class="p">(</span><span class="nv">$input</span><span class="p">[</span><span class="s1">'email'</span><span class="p">])</span> <span class="o">&gt;</span> <span class="mi">100</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nv">$errorMessage</span> <span class="o">.=</span> <span class="s2">"&lt;br&gt;'Email' is too long (100 characters max)!"</span><span class="p">;</span>
+            <span class="nv">$errors</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nb">strlen</span><span class="p">(</span><span class="nv">$input</span><span class="p">[</span><span class="s1">'password'</span><span class="p">])</span> <span class="o">&gt;</span> <span class="mi">72</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nv">$errorMessage</span> <span class="o">.=</span> <span class="s2">"&lt;br&gt;'Password' is too long (72 characters max)!"</span><span class="p">;</span>
+            <span class="nv">$errors</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nb">strlen</span><span class="p">(</span><span class="nv">$input</span><span class="p">[</span><span class="s1">'password'</span><span class="p">])</span> <span class="o">&lt;</span> <span class="mi">8</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nv">$errorMessage</span> <span class="o">.=</span> <span class="s2">"&lt;br&gt;'Password' is too short (8 characters min)!"</span><span class="p">;</span>
+            <span class="nv">$errors</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="c1">// validate field contents</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nb">empty</span><span class="p">(</span><span class="nv">$input</span><span class="p">[</span><span class="s1">'first_name'</span><span class="p">]))</span> <span class="p">{</span>
+            <span class="nv">$errorMessage</span> <span class="o">.=</span> <span class="s2">"&lt;br&gt;'First Name' is required!"</span><span class="p">;</span>
+            <span class="nv">$errors</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nb">empty</span><span class="p">(</span><span class="nv">$input</span><span class="p">[</span><span class="s1">'last_name'</span><span class="p">]))</span> <span class="p">{</span>
+            <span class="nv">$errorMessage</span> <span class="o">.=</span> <span class="s2">"&lt;br&gt;'Last Name' is required!"</span><span class="p">;</span>
+            <span class="nv">$errors</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nb">empty</span><span class="p">(</span><span class="nv">$input</span><span class="p">[</span><span class="s1">'email'</span><span class="p">]))</span> <span class="p">{</span>
+            <span class="nv">$errorMessage</span> <span class="o">.=</span> <span class="s2">"&lt;br&gt;'Email' is required!"</span><span class="p">;</span>
+            <span class="nv">$errors</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="o">!</span> <span class="nb">filter_var</span><span class="p">(</span><span class="nv">$input</span><span class="p">[</span><span class="s1">'email'</span><span class="p">],</span> <span class="nx">FILTER_VALIDATE_EMAIL</span><span class="p">))</span> <span class="p">{</span>
+            <span class="nv">$errorMessage</span> <span class="o">.=</span> <span class="s2">"&lt;br&gt;Invalid email!"</span><span class="p">;</span>
+            <span class="nv">$errors</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nb">empty</span><span class="p">(</span><span class="nv">$input</span><span class="p">[</span><span class="s1">'password'</span><span class="p">]))</span> <span class="p">{</span>
+            <span class="nv">$errorMessage</span> <span class="o">.=</span> <span class="s2">"&lt;br&gt;'Password' is required!"</span><span class="p">;</span>
+            <span class="nv">$errors</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nb">empty</span><span class="p">(</span><span class="nv">$input</span><span class="p">[</span><span class="s1">'repeat_password'</span><span class="p">]))</span> <span class="p">{</span>
+            <span class="nv">$errorMessage</span> <span class="o">.=</span> <span class="s2">"&lt;br&gt;'Repeat Password' is required!"</span><span class="p">;</span>
+            <span class="nv">$errors</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nv">$input</span><span class="p">[</span><span class="s1">'password'</span><span class="p">]</span> <span class="o">!==</span> <span class="nv">$input</span><span class="p">[</span><span class="s1">'repeat_password'</span><span class="p">])</span> <span class="p">{</span>
+            <span class="nv">$errorMessage</span> <span class="o">.=</span> <span class="s2">"&lt;br&gt;Passwords do not match!"</span><span class="p">;</span>
+            <span class="nv">$errors</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">errors</span> <span class="o">=</span> <span class="nv">$errors</span><span class="p">;</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">errorMessage</span> <span class="o">=</span> <span class="nv">$errorMessage</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+</code></pre></div>
+
+
+
+<p>We also need to add a new method <code>registerUser()</code> to the <code>OktaApiService</code> class:</p>
+
+<p><code>/src/services/OktaApiService.php</code><br>
+</p>
+
+<div class="highlight"><pre class="highlight php"><code><span class="o">...</span>
+   <span class="k">public</span> <span class="k">function</span> <span class="nf">registerUser</span><span class="p">(</span><span class="nv">$input</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="nv">$data</span><span class="p">[</span><span class="s1">'profile'</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="s1">'firstName'</span> <span class="o">=&gt;</span> <span class="nv">$input</span><span class="p">[</span><span class="s1">'first_name'</span><span class="p">],</span>
+            <span class="s1">'lastName'</span> <span class="o">=&gt;</span> <span class="nv">$input</span><span class="p">[</span><span class="s1">'last_name'</span><span class="p">],</span>
+            <span class="s1">'email'</span> <span class="o">=&gt;</span> <span class="nv">$input</span><span class="p">[</span><span class="s1">'email'</span><span class="p">],</span>
+            <span class="s1">'login'</span> <span class="o">=&gt;</span> <span class="nv">$input</span><span class="p">[</span><span class="s1">'email'</span><span class="p">]</span>
+        <span class="p">];</span>
+        <span class="nv">$data</span><span class="p">[</span><span class="s1">'credentials'</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="s1">'password'</span> <span class="o">=&gt;</span> <span class="p">[</span>
+                <span class="s1">'value'</span> <span class="o">=&gt;</span> <span class="nv">$input</span><span class="p">[</span><span class="s1">'password'</span><span class="p">]</span>
+            <span class="p">]</span>
+        <span class="p">];</span>
+        <span class="nv">$data</span> <span class="o">=</span> <span class="nb">json_encode</span><span class="p">(</span><span class="nv">$data</span><span class="p">);</span>
+
+        <span class="nv">$ch</span> <span class="o">=</span> <span class="nb">curl_init</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">apiUrlBase</span> <span class="o">.</span> <span class="s1">'users'</span><span class="p">);</span>
+        <span class="nb">curl_setopt</span><span class="p">(</span><span class="nv">$ch</span><span class="p">,</span> <span class="nx">CURLOPT_CUSTOMREQUEST</span><span class="p">,</span> <span class="s2">"POST"</span><span class="p">);</span>
+        <span class="nb">curl_setopt</span><span class="p">(</span><span class="nv">$ch</span><span class="p">,</span> <span class="nx">CURLOPT_POSTFIELDS</span><span class="p">,</span> <span class="nv">$data</span><span class="p">);</span>
+        <span class="nb">curl_setopt</span><span class="p">(</span><span class="nv">$ch</span><span class="p">,</span> <span class="nx">CURLOPT_RETURNTRANSFER</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+        <span class="nb">curl_setopt</span><span class="p">(</span><span class="nv">$ch</span><span class="p">,</span> <span class="nx">CURLOPT_HTTPHEADER</span><span class="p">,</span> <span class="p">[</span>
+            <span class="s1">'Accept: application/json'</span><span class="p">,</span>
+            <span class="s1">'Content-Type: application/json'</span><span class="p">,</span>
+            <span class="s1">'Content-Length: '</span> <span class="o">.</span> <span class="nb">strlen</span><span class="p">(</span><span class="nv">$data</span><span class="p">),</span>
+            <span class="s1">'Authorization: SSWS '</span> <span class="o">.</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">apiToken</span>
+        <span class="p">]);</span>
+
+        <span class="k">return</span> <span class="nb">curl_exec</span><span class="p">(</span><span class="nv">$ch</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="o">...</span>
+
+</code></pre></div>
+
+
+
+<p>The third handler simply shows a message ‘Thank you for your registration’ on the dashboard after a successful registration.</p>
+
+<p>The form looks like this and the code includes validation and error handling (the screenshot shows the output after submitting an empty form):</p>
+
+<p><a href="https://res.cloudinary.com/practicaldev/image/fetch/s--CazVcKNx--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://developer.okta.com/assets-jekyll/blog/php-simple-login/app-validation-a7c647503dc9774033cf2330dcedb5886c53484a57b9ce415c958c438bf7fd2d.png" class="article-body-image-wrapper"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--CazVcKNx--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://developer.okta.com/assets-jekyll/blog/php-simple-login/app-validation-a7c647503dc9774033cf2330dcedb5886c53484a57b9ce415c958c438bf7fd2d.png" alt="Validation and error handling" loading="lazy"></a></p>
+
+<p>You can see the new users in your Okta admin panel, if you go to <strong>Users</strong> &gt; <strong>People</strong>.</p>
+
+<h2>
+  <a name="forgot-password-through-the-okta-api" href="#forgot-password-through-the-okta-api" class="anchor">
+  </a>
+  Forgot Password Through the Okta API
+</h2>
+
+<p>The ‘Forgot Password’ feature will follow the same pattern:</p>
+
+<p>New handlers in <code>/public/index.php</code>:<br>
+</p>
+
+<div class="highlight"><pre class="highlight php"><code><span class="o">...</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nb">isset</span><span class="p">(</span><span class="nv">$_REQUEST</span><span class="p">[</span><span class="s1">'forgot'</span><span class="p">]))</span> <span class="p">{</span>
+    <span class="nx">view</span><span class="p">(</span><span class="s1">'forgot'</span><span class="p">);</span>
+    <span class="k">die</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nb">isset</span><span class="p">(</span><span class="nv">$_REQUEST</span><span class="p">[</span><span class="s1">'command'</span><span class="p">])</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="nv">$_REQUEST</span><span class="p">[</span><span class="s1">'command'</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'forgot_password'</span><span class="p">))</span> <span class="p">{</span>
+    <span class="nv">$userController</span><span class="o">-&gt;</span><span class="na">handleForgotPasswordPost</span><span class="p">();</span>
+    <span class="k">die</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nb">isset</span><span class="p">(</span><span class="nv">$_REQUEST</span><span class="p">[</span><span class="s1">'password_reset'</span><span class="p">]))</span> <span class="p">{</span>
+    <span class="nv">$data</span><span class="p">[</span><span class="s1">'thank_you'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'You should receive an email with password reset instructions'</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="o">...</span>
+
+</code></pre></div>
+
+
+
+<p>The first handler loads the <code>forgot</code> view when the Forgot Password link is clicked:</p>
+
+<p><code>/src/views/forgot.php</code><br>
+</p>
+
+<div class="highlight"><pre class="highlight plaintext"><code>&lt;?php view('header', $data); ?&gt;
+&lt;section class="hero"&gt;
+    &lt;div class="hero-body"&gt;
+        &lt;div class="container"&gt;
+            &lt;form method="post" action="/"&gt;
+
+&lt;?php
+    if ($data &amp;&amp; $data['errors']) {
+?&gt;
+&lt;div class="notification is-danger"&gt;
+&lt;?php
+    echo "Errors:";
+    echo $data['errorMessage'];
+?&gt;
+&lt;/div&gt;
+&lt;?php
+    }
+?&gt;
+
+&lt;div class="field"&gt;
+    &lt;label class="label"&gt;Email&lt;/label&gt;
+    &lt;div class="control"&gt;
+        &lt;input class="input" name="email" type="email" value="&lt;?php if ($data) { echo $data['input']['email']; } ?&gt;"&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;input type="hidden" name="command" value="forgot_password"&gt;
+
+&lt;div class="control"&gt;
+    &lt;button class="button is-link"&gt;Reset Password&lt;/button&gt;
+    &lt;a class="button is-link" href="/"&gt;Cancel&lt;/a&gt;
+&lt;/div&gt;
+
+            &lt;/form&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+&lt;?php view('footer'); ?&gt;
+
+</code></pre></div>
+
+
+
+<p>The second handler delegates to the user controller when the form is submitted:</p>
+
+<p><code>/src/controllers/UserController.php</code><br>
+</p>
+
+<div class="highlight"><pre class="highlight php"><code><span class="o">...</span>
+   <span class="k">public</span> <span class="k">function</span> <span class="nf">handleForgotPasswordPost</span><span class="p">()</span>
+    <span class="p">{</span>
+       <span class="k">if</span> <span class="p">(</span><span class="nv">$_SERVER</span><span class="p">[</span><span class="s1">'REQUEST_METHOD'</span><span class="p">]</span> <span class="o">===</span> <span class="s1">'POST'</span><span class="p">)</span> <span class="p">{</span>
+
+            <span class="nv">$input</span> <span class="o">=</span> <span class="p">[</span>
+                <span class="s1">'email'</span> <span class="o">=&gt;</span> <span class="nv">$_POST</span><span class="p">[</span><span class="s1">'email'</span><span class="p">]</span>
+            <span class="p">];</span>
+
+            <span class="c1">// validate the email address</span>
+            <span class="k">if</span> <span class="p">(</span><span class="nb">empty</span><span class="p">(</span><span class="nv">$input</span><span class="p">[</span><span class="s1">'email'</span><span class="p">])</span> <span class="o">||</span>
+                <span class="nb">strlen</span><span class="p">(</span><span class="nv">$input</span><span class="p">[</span><span class="s1">'email'</span><span class="p">])</span> <span class="o">&gt;</span> <span class="mi">100</span> <span class="o">||</span>
+                <span class="p">(</span><span class="o">!</span> <span class="nb">filter_var</span><span class="p">(</span><span class="nv">$input</span><span class="p">[</span><span class="s1">'email'</span><span class="p">],</span> <span class="nx">FILTER_VALIDATE_EMAIL</span><span class="p">)))</span> <span class="p">{</span>
+                <span class="nv">$viewData</span> <span class="o">=</span> <span class="p">[</span>
+                    <span class="s1">'input'</span> <span class="o">=&gt;</span> <span class="nv">$input</span><span class="p">,</span>
+                    <span class="s1">'errors'</span> <span class="o">=&gt;</span> <span class="kc">true</span><span class="p">,</span>
+                    <span class="s1">'errorMessage'</span> <span class="o">=&gt;</span> <span class="s1">'&lt;br&gt;Invalid email!'</span>
+                <span class="p">];</span>
+                <span class="nx">view</span><span class="p">(</span><span class="s1">'forgot'</span><span class="p">,</span> <span class="nv">$viewData</span><span class="p">);</span>
+                <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+            <span class="p">}</span>
+
+            <span class="c1">// search for this user via the OktaApi</span>
+            <span class="nv">$result</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">oktaApi</span><span class="o">-&gt;</span><span class="na">findUser</span><span class="p">(</span><span class="nv">$input</span><span class="p">);</span>
+            <span class="nv">$result</span> <span class="o">=</span> <span class="nb">json_decode</span><span class="p">(</span><span class="nv">$result</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+            <span class="k">if</span> <span class="p">(</span><span class="o">!</span> <span class="nb">isset</span><span class="p">(</span><span class="nv">$result</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">'id'</span><span class="p">]))</span> <span class="p">{</span>
+                <span class="nv">$viewData</span> <span class="o">=</span> <span class="p">[</span>
+                    <span class="s1">'input'</span> <span class="o">=&gt;</span> <span class="nv">$input</span><span class="p">,</span>
+                    <span class="s1">'errors'</span> <span class="o">=&gt;</span> <span class="kc">true</span><span class="p">,</span>
+                    <span class="s1">'errorMessage'</span> <span class="o">=&gt;</span> <span class="s1">'&lt;br&gt;User not found!'</span>
+                <span class="p">];</span>
+                <span class="nx">view</span><span class="p">(</span><span class="s1">'forgot'</span><span class="p">,</span> <span class="nv">$viewData</span><span class="p">);</span>
+                <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+            <span class="p">}</span>
+
+            <span class="c1">// attempt to send a reset link to this user</span>
+            <span class="nv">$userId</span> <span class="o">=</span> <span class="nv">$result</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">'id'</span><span class="p">];</span>
+            <span class="nv">$result</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">oktaApi</span><span class="o">-&gt;</span><span class="na">resetPassword</span><span class="p">(</span><span class="nv">$userId</span><span class="p">);</span>
+
+            <span class="nb">header</span><span class="p">(</span><span class="s1">'Location: /?password_reset'</span><span class="p">);</span>
+            <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="nb">header</span><span class="p">(</span><span class="s1">'HTTP/1.0 405 Method Not Allowed'</span><span class="p">);</span>
+        <span class="k">die</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="o">...</span>
+
+</code></pre></div>
+
+
+
+<p>The controller users two new methods from the <code>OktaApiService</code>: <code>findUser()</code> and <code>resetPassword()</code>:</p>
+
+<p><code>/src/services/OktaApiService.php</code><br>
+</p>
+
+<div class="highlight"><pre class="highlight php"><code><span class="o">...</span>
+   <span class="k">public</span> <span class="k">function</span> <span class="nf">findUser</span><span class="p">(</span><span class="nv">$input</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="nv">$url</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">apiUrlBase</span> <span class="o">.</span> <span class="s1">'users?q='</span> <span class="o">.</span> <span class="nb">urlencode</span><span class="p">(</span><span class="nv">$input</span><span class="p">[</span><span class="s1">'email'</span><span class="p">])</span> <span class="o">.</span> <span class="s1">'&amp;limit=1'</span><span class="p">;</span>
+        <span class="nv">$ch</span> <span class="o">=</span> <span class="nb">curl_init</span><span class="p">(</span><span class="nv">$url</span><span class="p">);</span>
+        <span class="nb">curl_setopt</span><span class="p">(</span><span class="nv">$ch</span><span class="p">,</span> <span class="nx">CURLOPT_RETURNTRANSFER</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+        <span class="nb">curl_setopt</span><span class="p">(</span><span class="nv">$ch</span><span class="p">,</span> <span class="nx">CURLOPT_HTTPHEADER</span><span class="p">,</span> <span class="p">[</span>
+            <span class="s1">'Accept: application/json'</span><span class="p">,</span>
+            <span class="s1">'Content-Type: application/json'</span><span class="p">,</span>
+            <span class="s1">'Authorization: SSWS '</span> <span class="o">.</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">apiToken</span>
+        <span class="p">]);</span>
+
+        <span class="k">return</span> <span class="nb">curl_exec</span><span class="p">(</span><span class="nv">$ch</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">resetPassword</span><span class="p">(</span><span class="nv">$userId</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="nv">$url</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">apiUrlBase</span> <span class="o">.</span> <span class="s1">'users/'</span> <span class="o">.</span> <span class="nv">$userId</span> <span class="o">.</span> <span class="s1">'/lifecycle/reset_password'</span><span class="p">;</span>
+
+        <span class="nv">$ch</span> <span class="o">=</span> <span class="nb">curl_init</span><span class="p">(</span><span class="nv">$url</span><span class="p">);</span>
+        <span class="nb">curl_setopt</span><span class="p">(</span><span class="nv">$ch</span><span class="p">,</span> <span class="nx">CURLOPT_CUSTOMREQUEST</span><span class="p">,</span> <span class="s2">"POST"</span><span class="p">);</span>
+        <span class="nb">curl_setopt</span><span class="p">(</span><span class="nv">$ch</span><span class="p">,</span> <span class="nx">CURLOPT_POSTFIELDS</span><span class="p">,</span> <span class="p">[]);</span>
+        <span class="nb">curl_setopt</span><span class="p">(</span><span class="nv">$ch</span><span class="p">,</span> <span class="nx">CURLOPT_RETURNTRANSFER</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+        <span class="nb">curl_setopt</span><span class="p">(</span><span class="nv">$ch</span><span class="p">,</span> <span class="nx">CURLOPT_HTTPHEADER</span><span class="p">,</span> <span class="p">[</span>
+            <span class="s1">'Accept: application/json'</span><span class="p">,</span>
+            <span class="s1">'Content-Type: application/json'</span><span class="p">,</span>
+            <span class="s1">'Authorization: SSWS '</span> <span class="o">.</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">apiToken</span>
+        <span class="p">]);</span>
+
+        <span class="k">return</span> <span class="nb">curl_exec</span><span class="p">(</span><span class="nv">$ch</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="o">...</span>
+
+</code></pre></div>
+
+
+
+<p>The third handler shows a message on the dashboard after triggering the reset process.</p>
+
+<p>The application is complete now. You can register new users in your Okta authorization server, authorize them in your Web application, and trigger the ‘Reset Password’ routine remotely.</p>
+
+<h2>
+  <a name="learn-more-about-php-and-okta-oauth-20" href="#learn-more-about-php-and-okta-oauth-20" class="anchor">
+  </a>
+  Learn More About PHP and Okta OAuth 2.0
+</h2>
+
+<p>You can find the whole code example here: <a href="https://github.com/oktadeveloper/okta-php-core-login-example">GitHub link</a></p>
+
+<p>If you would like to dig deeper into the topics covered in this article, the following resources are a great starting point:</p>
+
+<ul>
+<li><a href="https://developer.okta.com/authentication-guide/auth-overview/">OAuth 2.0 and OpenID Connect</a></li>
+<li><a href="https://developer.okta.com/docs/api/resources/users">Okta Users API</a></li>
+<li><a href="https://dev.to/blog/2018/12/06/crud-app-laravel-react">Build a Basic CRUD App with Laravel and React</a></li>
+<li><a href="https://dev.to/blog/2018/10/30/wordpress-authentication-with-okta">Wordpress Authentication with Okta</a></li>
+</ul>
+
+<p>As always if you have any questions, comments, or concerns about this post feel free to leave a comment below. For other great content from the Okta Dev Team, follow us on Twitter <a href="https://twitter.com/oktadev">@OktaDev</a>, <a href="https://www.facebook.com/oktadevelopers">Facebook</a>, <a href="https://www.linkedin.com/company/oktadev/">LinkedIn</a> and <a href="https://www.youtube.com/channel/UC5AMiWqFVFxF1q9Ya1FuZ_Q">YouTube</a>!</p>
+
+
+          </div>
+
+        </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--   Blog Single End   -->
+
+    <!--   Return To Top  -->
+    <a class="return-to-top text-white bg-base-color d-inline-block" href="javascript:void(0)"><i class="lni-arrow-up"></i></a>
+
+
+    <!--  JavaScripts  -->
+    <script src="../assets/js/jquery-3.4.1.min.js"></script>
+    <!--  Bootstrap Js  -->
+    <script src="../assets/js/bootstrap.js"></script>
+    <!--  Easing Js  -->
+    <script src="../assets/js/jquery.easing.min.js"></script>
+    <!--  Typed Js  -->
+    <script src="../assets/js/typed.js"></script>
+    <!--  Magnific Popup Js  -->
+    <script src="../assets/js/jquery.magnific-popup.min.js"></script>
+    <!--  Isotope Js  -->
+    <script src="../assets/js/isotope.pkgd.min.js"></script>
+    <!--  Owl Carousel Js  -->
+    <script src="../assets/js/owl.carousel.min.js"></script>
+    <!--  Particle Js  -->
+    <script src="../assets/js/particles-01.min.js"></script>
+    <!--  particles app Js  -->
+    <script src="../assets/js/particles-01.app.js"></script>
+    <!-- Map Js -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRemITiP7JRWpZwLhVt-T2x5MeUFE2KWs"></script>
+    <!--  Custom JS  -->
+    <script src="../assets/js/arshia.js"></script>
+
+  </body>
+</html>
